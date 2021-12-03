@@ -3,7 +3,7 @@
 #requires -RunAsAdministrator
 
 # Set the Execution policy
-Set-ExecutionPolicy -Unrestricred
+Set-ExecutionPolicy -Unrestricted
 
 # Install Chocolatey
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
