@@ -1,5 +1,4 @@
 # Needs to be run as Admin
-
 #requires -RunAsAdministrator
 
 # Set the Execution policy
@@ -9,7 +8,6 @@ Set-ExecutionPolicy -Unrestricted
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Install apps (Chocolatey won't install it if it's already on the system)
-
 choco install firefox -fy
 choco install googlechrome -fy
 choco install steam-client -fy
