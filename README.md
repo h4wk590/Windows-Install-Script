@@ -1,3 +1,23 @@
-# Windows-Install-Script
+# Windows-Install-Script/Bloat Remover
+
+- Uses [Chocolatey](https://community.chocolatey.org/) to install applications
+- Removes common bloatware shipped with Windows 10/11
+
+## How to run
+
+> open Powershell as <b>Administrator<b>
+
+Copy and paste the following:
+
+`irm https://raw.githubusercontent.com/h4wk590/Windows-Install-Script/main/main.ps1 | iex`
+
+- You may need to `Set-ExecutionPolicy Unrestricted`. The script should do this for you.
+
+For TLS related errors run this:
+
+`[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12;iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/h4wk590/Windows-Install-Script/main/main.ps1')`
+
+
+
  
- Switched this from Winget to Chocolatey because it's a bit easier to use and is more feature rich.
+ 
