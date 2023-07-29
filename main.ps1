@@ -1,3 +1,8 @@
+<#
+    AUTHOR: Aidan Brown
+    Windows Install script w/ bloat removal
+#>
+
 # Needs to be run as Admin
 #requires -RunAsAdministrator
 
