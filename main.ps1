@@ -101,7 +101,7 @@ $bloat_apps = @(
     "*tiktok*"
 )
 
-foreach ($bloat in $bloat_apps){
+ForEach ($bloat in $bloat_apps){
     Write-Output "Attempting to remove $bloat"
 
     Get-AppxPackage -Name $bloat -AllUsers | Remove-AppxPackage
@@ -110,4 +110,5 @@ foreach ($bloat in $bloat_apps){
      ForEach-Object { Remove-ProvisionedAppxPackage -Online -AllUsers -PackageName $_.PackageName }
 }
 
+Write-Host "Done"
 
