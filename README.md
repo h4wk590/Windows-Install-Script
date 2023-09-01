@@ -1,5 +1,7 @@
 # Windows-Install-Script/Bloat Remover
 
+- Installs Virtual Machine Platform and WSL Windows Features
+- Sets WSL2 to the default version of WSL
 - Uses [Chocolatey](https://community.chocolatey.org/) to install applications
 - Removes common bloatware shipped with Windows 10/11
 
