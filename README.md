@@ -19,6 +19,19 @@ For TLS related errors run this:
 
 `[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12;iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/h4wk590/Windows-Install-Script/main/main.ps1')`
 
+## Add or change applications to install
+
+Modify the following line:
+
+```# Install apps (Chocolatey won't install it if it's already on the system)
+$apps = @('firefox', 'googlechrome', 'steam-client', 'discord',
+'notepadplusplus', 'vscode', 'spotify', 'greenshot', 'powertoys',
+'docker-desktop', '7zip', 'runelite', 'adobereader', 'qgis', 'screentogif',
+'obsidian', 'nextcloud-client')```
+
+- Add or remove any programs you want. 
+- Chocolatey has an extensive list of packages [here](https://community.chocolatey.org/packages).
+
 
 
  
