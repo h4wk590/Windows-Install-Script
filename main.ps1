@@ -41,7 +41,8 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 # Install apps (Chocolatey won't install it if it's already on the system)
 $apps = @('firefox', 'googlechrome', 'steam-client', 'discord',
 'notepadplusplus', 'vscode', 'spotify', 'greenshot', 'powertoys',
-'docker-desktop', '7zip', 'runelite', 'adobereader', 'qgis', 'screentogif')
+'docker-desktop', '7zip', 'runelite', 'adobereader', 'qgis', 'screentogif',
+'obsidian', 'nextcloud-client')
 
 choco install $apps -fy
 }
